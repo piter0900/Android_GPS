@@ -1,0 +1,1 @@
+In this perticular lab I created a step counter according to the sensor data. the last project, which I'm having trouble finding at the moment, is to utilize this perticular step counter to design a maze solution- calculate the closest route according to a map provided and update position according to each step. 

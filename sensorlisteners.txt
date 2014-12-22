@@ -1,0 +1,31 @@
+1. Create sensor manager
+SensorManager sensormanager = (SensorManager)getSystemService(SENSOR_SERVICE);
+
+2. Create a sensor
+Sensor lightsensor = sensormanager.getDefaultSensor(Sensor.TYPE_LIGHT);
+
+3. Creat AllSensorEventListener class
+class AllSensorEventListener implements SensorEventListener{
+AllSensorEventListener(){
+	}
+public void onAccuracyChanged(Sensor s, int x){
+	}
+public void onSensorChanged(SensorEvent se){
+	if(se.sensor.getType() == Sensor.TYPE_LIGHT){
+		}
+	}
+}
+
+4. Instantiate a specific listener object
+SensorEventListener lightlistener = new AllSensorEventListener();
+
+5. Register the listener with the sensor
+sensormanager.registerListener(lightlistener, lightsensor, sensormanager.SENSOR_DELAY_NORMAL);
+
+
+
+
+SensorManager sm = (SensorManager)getSystemService(SENSOR_SERVICE);
+Sensor S = sm.getDefaultSensor(Soensor.TYPE_LIGHT)
+SensorEventLitstener sel = New LightSensorEL();
+sm.registerListener 
